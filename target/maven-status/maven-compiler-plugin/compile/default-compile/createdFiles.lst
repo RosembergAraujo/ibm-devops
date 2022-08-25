@@ -1,2 +1,4 @@
+Models\Grade.class
 ibm\berg\ibm\Utils\Util.class
+Models\Student.class
 ibm\berg\ibm\IbmBergNameApplication.class
