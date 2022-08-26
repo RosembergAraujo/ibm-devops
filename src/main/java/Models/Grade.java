@@ -27,7 +27,13 @@ public class Grade {
 
     @Override
     public String toString() {
-        return "Nota: { Materia: \"" + this.subject + "\", Nota: \"" + this.value + "\" }";
+        var gradeStatus = "";
+
+        if (this.value < 5) gradeStatus = "Reprovado";
+        else if (this.value < 7) gradeStatus = "Recuperação";
+        else gradeStatus = "Aprovado";
+
+        return "Nota: { Materia: \"" + this.subject + "\", Nota: \"" + this.value + "\", Situação: \""+gradeStatus+"\" }";
     }
 
 

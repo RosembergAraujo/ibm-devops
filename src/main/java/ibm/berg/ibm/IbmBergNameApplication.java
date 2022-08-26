@@ -6,7 +6,6 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.logging.log4j.message.Message;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 // import org.springframework.boot.SpringApplication;
 
@@ -117,6 +116,7 @@ public class IbmBergNameApplication {
 			MainMenu();
 		} catch (Exception e) {
 			Util.SendMessage("Erro!", 3000);
+			SetGrades(reader);
 		}
 	}
 
